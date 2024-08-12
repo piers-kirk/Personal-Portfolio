@@ -2,13 +2,17 @@
 <p>
   I built this portfolio on CodePen using HTML, CSS, and JavaScript.
   
-  Thank you for taking the time to check it out! 
-  
   I created this project independently but frequently used ChatGPT to accelerate development and learn new topics. 
   
   I also followed [this](https://www.youtube.com/watch?v=ytl6TrroGis) Web Dev Simplified YouTube tutorial to enable Scroll Snap.
 
+  I used [ChartsCSS](https://github.com/ChartsCSS/charts.css) to create the charts in the About Section. 
+
   You can check out the CodePen for this project [here](https://codepen.io/piers-kirk/pen/oNrbvNo)
+
+  You can check out the deployed website [here](https://piers-kirk.github.io/Personal-Portfolio/#section-home). I have deployed the site, using GitHub Pages. 
+
+  Thank you for taking the time to check it out! 
 </p>
 
 <h3>Future Tasks:</h3>
