@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - First CodePen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/charts.css@1.1.0/dist/charts.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div>
+    <header>
+      <nav>
+        <ul id="main-menu">
+          <li class="main-menu-item"><a id="home-link" onclick="activateSection('home')" href="#section-home">HOME</a></li>
+          <li class="main-menu-item"><a id="about-link" onclick="activateSection('about')" href="#section-about">ABOUT</a></li>
+          <li class="main-menu-item"><a id="projects-link" onclick="activateSection('projects')" href="#section-projects">PROJECTS</a></li>
+          <li class="main-menu-item"><a id="contact-link" onclick="activateSection('contact')" href="#section-contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section id="section-home" class="example">
+      <p id="intro-paragraph">Hello, my name is Frank Collins, and I am a full-stack developer.</p>
+    </section>
+    <section id="section-about">
+			<div class="top-container">
+			</div>
+      <div class="middle-container">
+				<div id="about-section-intro">
+					<h1>Introduction</h1>
+					<p>Hello</p>
+				</div>
+        <!-- Language Section -->
+        <div id="language-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Types of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">HTML</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">CSS</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript</th>
+                <td style="--size: calc(0 / 5);"></td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">Python</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+							 <tr>
+                <th scope="row">R</th>
+                <td style="--size: calc(3 / 5);">3</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+              <tr>
+                <th scope="row">Java</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">C/C++</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+        <!-- Databases Section -->
+        <div id="databases-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Types of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">T-SQL</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">MS SQL</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+        <!-- Frameworks Section -->
+        <div id="frameworks-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Types of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">Angular</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+							<tr>
+                <th scope="row">RxJS</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">Spring Boot</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">Selenium</th>
+                <td style="--size: calc(0 / 5);"></td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">Apache POI</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+        <!-- DevOps Section -->
+        <div id="devops-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Type of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">Git</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">Sourcetree</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(3 / 5);">3</td>
+              </tr>
+              <tr>
+                <th scope="row">Docker</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+              <tr>
+                <th scope="row">Jenkins</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+							<tr>
+                <th scope="row">Jira</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+        <!-- Tools Section -->
+        <div id="tools-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Types of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">Apache HTTP Server</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+              <tr>
+                <th scope="row">Apache Tomcat</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+        <!-- Build Automation Section -->
+        <div id="build-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Types of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">Maven</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+        <!-- Cloud Platforms Section -->
+        <div id="cloud-section" class="table-container">
+          <table class="charts-css bar multiple stacked data-center show-primary-axis show-labels show-heading show-data-axes">
+            <caption><b>Years and Types of Experience</b></caption>
+            <tbody>
+              <tr>
+                <th scope="row">AWS</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+              <tr>
+                <th scope="row">Heroku</th>
+                <td style="--size: calc(2 / 5);">2</td>
+                <td style="--size: calc(0 / 5);"></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="charts-css legend legend-circle legend-inline">
+            <li>University</li>
+            <li>Professional</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div id="side-menu">
+    				 <button id="introduction-button" onclick="showSection('about-section-intro', 'introduction-button')">Introduction</button>
+          <button id="language-button" onclick="showSection('language-section', 'language-button')">Languages</button>
+          <button id="databases-button" onclick="showSection('databases-section', 'databases-button')">Databases</button>
+          <button id="frameworks-button" onclick="showSection('frameworks-section', 'frameworks-button')">Frameworks and Libraries</button>
+          <button id="devops-button"  onclick="showSection('devops-section', 'devops-button')">Version Control and DevOps</button>
+          <button id="tools-button"  onclick="showSection('tools-section', 'tools-button')">Tools and Technologies</button>
+          <button id="build-button"  onclick="showSection('build-section', 'build-button')">Build Automation</button>
+          <button id="cloud-button" onclick="showSection('cloud-section', 'cloud-button')">Cloud Platforms</button>
+        </div>
+      </div>
+    </section>
+    <section id="section-projects">
+      <div class="projects">
+        <p><b>Personal Portfolio</b></p>
+        <p>HTML, CSS and JavaScript</p>
+        <p id="project-type">
+          <button class="project-buttons">View Code</button>
+        </p>
+      </div>
+      <div class="projects">
+        <p><b>Show Tracker</b></p>
+        <p>Spring Boot and Angular</p>
+        <p id="project-type">
+          <button class="project-buttons">View Application</button>
+          <button class="project-buttons">View Code</button>
+        </p>
+      </div>
+    </section>
+    <section id="section-contact">
+      <div class="top-section">
+      </div>
+      <div class="middle-section">
+        <div class="mail-methods"><i>
+          Thank you for taking the time to check out my portfolio. Please feel free to reach out if you have any questions.
+          </i>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="contact-methods">
+          <a href="https://linkedin.com" target="_blank"><i id="linkedin-icon" class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com" target="_blank"><i id="github-icon" class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank">					<i id="mail-icon" class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
