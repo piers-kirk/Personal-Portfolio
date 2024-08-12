@@ -17,6 +17,5 @@
 
 <h3>Future Tasks:</h3>
 <ul>
-  <li>Update the LinkedIn URL; currently the URL is broken.</li>
   <li>If the user keeps scrolling while on the first or last sections, the application doesn't properly snap back to a valid section.</li>
 </ul>  
