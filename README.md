@@ -4,15 +4,15 @@
   
   I created this project independently but frequently used ChatGPT to accelerate development and learn new topics. 
   
-  I also followed [this](https://www.youtube.com/watch?v=ytl6TrroGis) Web Dev Simplified YouTube tutorial to enable Scroll Snap.
+  I also followed [this](https://www.youtube.com/watch?v=ytl6TrroGis) Web Dev Simplified YouTube tutorial to enable the Scroll Snap functionality.
 
   I used [ChartsCSS](https://github.com/ChartsCSS/charts.css) to create the charts in the About Section. 
 
-  You can check out the CodePen for this project [here](https://codepen.io/piers-kirk/pen/oNrbvNo)
+  You can check out the CodePen for this project [here](https://codepen.io/piers-kirk/pen/oNrbvNo).
 
   You can check out the deployed website [here](https://piers-kirk.github.io/Personal-Portfolio/#section-home). I used GitHub Pages to deploy the site. 
 
-  Thank you for taking the time to check it out! 
+  Thank you for taking the time to check out my portfolio! 
 </p>
 
 <h3>Future Tasks:</h3>
