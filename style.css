@@ -242,6 +242,10 @@ section {
 	height: 90%;
 }
 
+#about-section-intro p {
+	font-size: 40px;
+}
+
 .table-container {
 	display: flex;
 	justify-content: center;
