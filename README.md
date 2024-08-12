@@ -10,7 +10,7 @@
 
   You can check out the CodePen for this project [here](https://codepen.io/piers-kirk/pen/oNrbvNo)
 
-  You can check out the deployed website [here](https://piers-kirk.github.io/Personal-Portfolio/#section-home). I have deployed the site, using GitHub Pages. 
+  You can check out the deployed website [here](https://piers-kirk.github.io/Personal-Portfolio/#section-home). I used GitHub Pages to deploy the site. 
 
   Thank you for taking the time to check it out! 
 </p>
