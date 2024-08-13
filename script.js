@@ -3,33 +3,61 @@ $(document).ready(function () {
    if (introParagraph.length) {
       introParagraph.addClass("animate");
    }
+
    activateSection("home");
    showSection("about-section-intro", "introduction-button");
-   $(
-      "#language-section, #databases-section, #frameworks-section, #devops-section, #tools-section, #build-section, #cloud-section"
-   ).hide();
-});
-
-$(window).on("scroll", function () {
-   const scrollPos = $(document).scrollTop();
 
    const sections = [
-      "section-home",
-      "section-about",
-      "section-projects",
-      "section-contact"
+      "#language-section",
+      "#databases-section",
+      "#frameworks-section",
+      "#devops-section",
+      "#tools-section",
+      "#build-section",
+      "#cloud-section"
    ];
-   let currentSection = "";
-   sections.forEach((id) => {
-      const sectionOffset = $("#" + id).offset().top;
-      const sectionHeight = $("#" + id).outerHeight();
-      if (scrollPos >= sectionOffset && scrollPos < sectionOffset + sectionHeight) {
-         currentSection = id;
+   $(sections.join(", ")).hide();
+
+   // code snippet taken from: https://stackoverflow.com/a/21995961
+   const eTop = $("body").offset().top;
+   $(document).scrollTop(eTop);
+   const eHeight = $("body").height();
+   const eBottom = eTop + eHeight - $(window).height();
+
+   $(document).on("scroll", function () {
+      const scrollPos = $(document).scrollTop();
+
+      let currentSection = "";
+      const sectionIds = [
+         "section-home",
+         "section-about",
+         "section-projects",
+         "section-contact"
+      ];
+
+      sectionIds.forEach((id) => {
+         const sectionOffset = $("#" + id).offset().top;
+         const sectionHeight = $("#" + id).outerHeight();
+
+         if (
+            scrollPos >= sectionOffset &&
+            scrollPos < sectionOffset + sectionHeight
+         ) {
+            currentSection = id;
+         }
+      });
+
+      if (currentSection) {
+         activateSection(currentSection);
+      }
+
+      const windowScrollTop = $(window).scrollTop();
+      if (windowScrollTop < eTop) {
+         $(document).scrollTop(eTop);
+      } else if (windowScrollTop > eBottom) {
+         $(document).scrollTop(eBottom);
       }
    });
-   if (currentSection) {
-      activateSection(currentSection);
-   }
 });
 
 function activateSection(sectionId) {
@@ -46,12 +74,29 @@ function activateSection(sectionId) {
 }
 
 function showSection(sectionId, buttonId) {
-   $(
-      "#about-section-intro, #language-section, #databases-section, #frameworks-section, #devops-section, #tools-section, #build-section, #cloud-section"
-   ).hide();
+   const sections = [
+      "#about-section-intro",
+      "#language-section",
+      "#databases-section",
+      "#frameworks-section",
+      "#devops-section",
+      "#tools-section",
+      "#build-section",
+      "#cloud-section"
+   ];
+   $(sections.join(", ")).hide();
    $("#" + sectionId).show();
-   $(
-      "#introduction-button, #language-button, #databases-button, #frameworks-button, #devops-button, #tools-button, #build-button, #cloud-button"
-   ).css("color", "#000000");
+
+   const buttons = [
+      "#introduction-button",
+      "#language-button",
+      "#databases-button",
+      "#frameworks-button",
+      "#devops-button",
+      "#tools-button",
+      "#build-button",
+      "#cloud-button"
+   ];
+   $(buttons.join(", ")).css("color", "#000000");
    $("#" + buttonId).css("color", "#FF6F61");
 }
