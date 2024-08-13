@@ -18,4 +18,5 @@
 <h3>Future Tasks:</h3>
 <ul>
   <li>If the user keeps scrolling while on the first or last sections, the application doesn't properly snap back to a valid section.</li>
+  <li>Multiple errors are being logged in the console. These need to be resolved.</li>
 </ul>  
