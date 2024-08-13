@@ -30,21 +30,6 @@ $(window).on("scroll", function () {
 	if (currentSection) {
 		activateSection(currentSection);
 	}
-
-	const windowHeight = $(window).height();
-	const scrollSection = scrollPos + windowHeight;
-	const minScroll = 0;
-	const maxScroll = windowHeight * 4; // there are 4 sections
-	const finalSectionStart = scrollPos * 4;
-	console.log('scrollPos', scrollPos);
-	if (scrollPos < minScroll) {
-		console.log('scrollPos < minScroll');
-		window.scrollTo({ top: 0, behavior: "smooth" });
-	}
-	if (maxScroll < scrollSection) {
-		console.log('maxScroll < scrollSection');
-		window.scrollTo({ top: scrollPos * 4, behavior: "smooth" });
-	}
 });
 
 function activateSection(sectionId) {
