@@ -19,10 +19,10 @@ $(document).ready(function () {
    $(sections.join(", ")).hide();
 
    // code snippet taken from: https://stackoverflow.com/a/21995961
-   const eTop = $("body").offset().top;
-   $(document).scrollTop(eTop);
-   const eHeight = $("body").height();
-   const eBottom = eTop + eHeight - $(window).height();
+	const eTop = $("body").offset().top;
+	$(document).scrollTop(eTop);
+	const eHeight = $("body").height();
+	const eBottom = $(window).height() * 3;
 
    $(document).on("scroll", function () {
       const scrollPos = $(document).scrollTop();
@@ -51,13 +51,13 @@ $(document).ready(function () {
          activateSection(currentSection);
       }
 
-      const windowScrollTop = $(window).scrollTop();
-      if (windowScrollTop < eTop) {
-         $(document).scrollTop(eTop);
-      } else if (windowScrollTop > eBottom) {
-         $(document).scrollTop(eBottom);
-      }
-   });
+		const windowScrollTop = $(window).scrollTop();
+		if (windowScrollTop < eTop) {
+			$(document).scrollTop(eTop);
+		} else if (eBottom < windowScrollTop) {
+			$(document).scrollTop(eBottom);
+		}
+	});
 });
 
 function activateSection(sectionId) {
